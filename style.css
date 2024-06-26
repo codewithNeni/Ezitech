@@ -521,6 +521,9 @@ margin-top: 100px;
     color: rgb(39, 48, 68);
     font-size: 16px;
     font-weight: 400;
+    position: relative;
+    bottom: 25px;
+    padding: 4px;
 }
 
 .internships-box button{
@@ -546,4 +549,21 @@ margin-top: 100px;
     background-color: rgb(4, 45, 137);
     cursor: pointer;
     transition: 0.2s;
+}
+
+.button button:hover{
+    background-color: rgb(4, 45, 137);
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.button button{
+    background-color: #3275db;
+    border-radius: 3px;
+    color: white;
+    font-size: 15px;
+    border: none;
+    padding: 12px 24px;
+    font-weight: 500;
+    margin: 0px auto;
 }
