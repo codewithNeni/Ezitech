@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -6,83 +6,97 @@
     list-style-type: none;
 }
 
-body{
+body {
     overflow-x: hidden;
     width: 100vw;
     height: 100%;
     color: rgb(39, 48, 68);
 }
 
-.top-head{
+.top-head {
     background-color: #3275db;
     display: flex;
     width: 100vw;
     justify-content: space-around;
     color: white;
-    height: 5vh;
+    /* height: 5vh; */
+    padding-top: 10px;
+    padding-bottom: 10px;
     align-items: center;
     font-size: 14px;
     font-family: "Poppins", sans-serif;
 }
 
-.top-head img{
+.top-head img {
     width: 20px;
     height: 20px;
 }
 
-.top-head-cont{
+.top-head-cont {
     width: 95%;
     display: flex;
     justify-content: center;
 }
 
-.phone-no , .location , .timing , social-icons{
+.phone-no,
+.location,
+.timing,
+social-icons {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
 }
 
-.phone-no{
+.phone-no {
     width: 11%;
     /* background-color: red; */
 }
 
-.location{
+.location {
     width: 42%;
     /* background-color: aqua; */
 }
 
-.timing{
+.timing {
     width: 18%;
     /* background-color: yellow; */
 }
 
-.social-icons{
+.social-icons {
     width: 10%;
     display: flex;
     gap: 15px;
     /* background-color: violet; */
 }
 
+@media (max-width:700px) {
+
+    .top-head {
+        display: none;
+    }
+
+}
+
 /* nav and hero starts From here */
 
-.background{
+.background {
     background-image: url(Assets/hero-bg.jpeg);
     background-position: center center;
-    background-size: max(1200px , 100vw);
+    background-size: max(1200px, 100vw);
     background-repeat: no-repeat;
     height: 750px;
     position: relative;
+    width: 100%;
 }
 
-.overlay{
+.overlay {
     width: 100%;
     height: 100%;
     background-color: rgba(4, 44, 137, 0.712);
 }
 
 
-nav{
+nav {
     width: 100%;
     height: 15vh;
     justify-content: center;
@@ -91,7 +105,7 @@ nav{
     border-bottom: 1px solid white;
 }
 
-.logo img{
+.logo img {
     width: 250px;
 }
 
@@ -104,16 +118,20 @@ ul {
     font-weight: 600;
 }
 
-.nav-icons img{
+.nav-icons img {
     width: 30px;
 }
 
-.nav-icons{
+.nav-icons {
     display: flex;
     gap: 1.5vw;
 }
 
-.nav-cont{
+.nav-links img {
+    display: none;
+}
+
+.nav-cont {
     width: 85%;
     display: flex;
     display: flex;
@@ -124,9 +142,37 @@ ul {
     margin: 0px auto;
 }
 
+
+@media (max-width:700px) {
+
+    .logo img {
+        width: 140px;
+    }
+
+    nav {
+        padding: 0px;
+    }
+
+    nav ul {
+        display: none;
+    }
+
+
+    .nav-links img {
+        display: block;
+        height: 40px;
+    }
+
+    .nav-icons {
+        display: none;
+    }
+
+
+}
+
 /* Hero Section  */
 
-.hero{
+.hero {
     height: 70%;
     width: 100%;
     /* background-color: aqua; */
@@ -138,29 +184,33 @@ ul {
     color: white;
 }
 
-.hero h1{
+.hero h1 span {
+    color: #5394f5;
+}
+
+.hero h1 {
     color: white;
     font-size: 3.5vw;
     width: 70%;
     text-align: center;
 }
 
-.hero h2{
+.hero h2 {
     font-weight: 400;
     font-size: 2vw;
 }
 
-input{
+input {
     border: none;
     width: 25vw;
     height: 45px;
 }
 
-::placeholder{
+::placeholder {
     font-size: 18px;
 }
 
-.hero-first-div{
+.hero-first-div {
     display: flex;
     background-color: white;
     align-items: center;
@@ -168,37 +218,39 @@ input{
     border-radius: 8px;
 }
 
-.hero-first-div img{
+.hero-first-div img {
     width: 40px;
 }
 
-.hero-sec-div{
+.hero-sec-div {
     display: flex;
     gap: 1vw;
     align-items: center;
     justify-content: center;
 }
 
-.hero-sec-div h3{
+.hero-sec-div h3 {
     font-weight: 400;
     font-size: 2vw;
 }
 
-.hero-sec-div img{
+.hero-sec-div img {
     width: 2vw;
 }
 
-.hero-logos :first-child{
-    width: 19vw;
-}
-.hero-logos :nth-child(2){
-    width: 13vw;
-}
-.hero-logos :nth-child(3){
+.hero-logos :first-child {
     width: 19vw;
 }
 
-.hero-logos{
+.hero-logos :nth-child(2) {
+    width: 13vw;
+}
+
+.hero-logos :nth-child(3) {
+    width: 19vw;
+}
+
+.hero-logos {
     display: flex;
     align-items: center;
     width: 60%;
@@ -207,23 +259,74 @@ input{
     justify-content: space-evenly;
 }
 
+@media (max-width:700px) {
+
+    .hero {
+        height: 50%;
+        width: 100%;
+        /* background-color: aqua; */
+        /* margin-top: 70px; */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* justify-content: space-evenly; */
+        color: white;
+    }
+
+    .background {
+        height: 60vh;
+    }
+
+
+    .hero h1 {
+        font-size: 28px;
+        width: 97%;
+    }
+
+    .hero-first-div {
+        display: none;
+    }
+
+    .hero h2 {
+        display: none;
+    }
+
+    .hero-sec-div {
+        display: none;
+    }
+
+    .hero-logos {
+        margin-top: 0px;
+    }
+
+
+}
+
 
 /* Working Section starts from here */
 
-.working{
+@media (max-width:700px) {
+    .working img {
+        width: 250px;
+    }
+}
+
+.working {
     width: 100%;
     /* height: 50vh; */
     /* background-color: red; */
 }
 
-.working h1{
+.working h1 {
     text-align: center;
-    font-size: 45px;
+    font-size: 43px;
+    width: 97%;
+    margin: 0px auto;
     font-weight: 700;
-    margin: 50px;
+    margin-top: 50px;
 }
 
-.working-png{
+.working-png {
     /* background-color: rebeccapurple; */
     margin: 0px auto;
     display: flex;
@@ -232,13 +335,38 @@ input{
     flex-wrap: wrap;
 }
 
-.working img{
+.working img {
     width: 300px;
 }
 
 /* Courses Grid Start  */
 
-.courses-grid{
+@media (max-width:700px) {
+
+    .upper-grid {
+        width: 100vw;
+    }
+
+    .lower-grid{
+        width: 100vw;
+    }
+
+    .box {
+        width: 130px;
+        height: 150px;
+        margin: 0px;
+        background-color: white;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        border-radius: 20px;
+        box-shadow: 1px 1px 20px rgb(212, 210, 210);
+        transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+    }
+}
+
+
+.courses-grid {
     width: 100vw;
     /* height: 60vh; */
     /* background-color: red; */
@@ -248,33 +376,34 @@ input{
     margin-top: 60px;
 }
 
-.upper-grid{
+.upper-grid {
     margin: 0px auto;
     width: 90%;
     height: 40%;
     display: flex;
     justify-content: space-evenly;
     /* background-color: blueviolet; */
-    flex-wrap:wrap;
-}
-.lower-grid{
-    margin: 0px auto;
-    width: 90%;
-    height: 40%;
-    display: flex;
-    justify-content: space-evenly;
-    /* background-color: blueviolet; */
-    flex-wrap:wrap;
+    flex-wrap: wrap;
 }
 
-.box h3{
+.lower-grid {
+    margin: 0px auto;
+    width: 90%;
+    height: 40%;
+    display: flex;
+    justify-content: space-evenly;
+    /* background-color: blueviolet; */
+    flex-wrap: wrap;
+}
+
+.box h3 {
     font-size: 16px;
 }
 
-.box{
+.box {
     width: 150px;
     height: 170px;
-    margin: 15px;
+    margin: 6px;
     background-color: white;
     display: flex;
     flex-direction: column;
@@ -284,31 +413,39 @@ input{
     box-shadow: 1px 1px 20px rgb(212, 210, 210);
     transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
 }
-.box img{
+
+.box img {
     width: 90px;
 }
 
-.box:hover{
+.box:hover {
     box-shadow: 1px 1px 30px rgb(180, 180, 180);
-    transform: translateY(-10px); 
+    transform: translateY(-10px);
     cursor: pointer;
 }
 
 /* Courses Starts from here */
 
-.courses{
+@media (max-width:700px){
+    .courses h1{
+        font-size: 28px;
+        width: 97%;
+    }
+}
+
+.courses {
     /* height: 90vh; */
     width: 100vw;
     /* background-color: red; */
 }
 
-.courses h1{
+.courses h1 {
     text-align: center;
     font-size: 45px;
     margin-top: 50px;
 }
 
-.courses-cont{
+.courses-cont {
     margin: 0px auto;
     width: 100%;
     /* height: 80vh; */
@@ -320,7 +457,7 @@ input{
     flex-wrap: wrap;
 }
 
-.courses-box{
+.courses-box {
     width: 300px;
     height: 350px;
     margin: 20px;
@@ -331,16 +468,16 @@ input{
     background-image: url(Assets/Flutter-Development.jpg);
     box-shadow: 1px 1px 20px rgb(192, 191, 191);
     -webkit-transition: all .4s;
-    transition:.5s;
+    transition: .5s;
 }
 
-.courses-box:hover{
-    transform: translateY(-20px); 
+.courses-box:hover {
+    transform: translateY(-20px);
     cursor: pointer;
     cursor: pointer;
 }
 
-.courses-box p{
+.courses-box p {
     color: rgb(170, 170, 170);
     font-size: 16px;
     margin-top: 10px;
@@ -348,7 +485,7 @@ input{
 
 }
 
-.courses-box h3{
+.courses-box h3 {
     width: 80%;
     margin-top: 5px;
     margin-left: 15px;
@@ -356,20 +493,20 @@ input{
 
 }
 
-.courses-box-content{
+.courses-box-content {
     background-color: white;
     height: 48%;
     border-radius: 13px;
 
 }
 
-.courses-box-content hr{
+.courses-box-content hr {
     width: 80%;
     margin: 0px auto;
     color: rgb(255, 255, 255);
 }
 
-.courses-price-month{
+.courses-price-month {
     display: flex;
     align-items: center;
     height: 40px;
@@ -380,7 +517,7 @@ input{
     /* background-color: aqua; */
 }
 
-.courses-price-month p{
+.courses-price-month p {
     width: 40%;
     margin-top: 0px;
     /* background-color: red; */
@@ -388,7 +525,7 @@ input{
     font-size: 14px;
 }
 
-.courses-price-month h3{
+.courses-price-month h3 {
     width: 35%;
     margin-top: 10px;
     color: rgb(39, 48, 68);
@@ -398,25 +535,25 @@ input{
     font-size: 18px;
 }
 
-.courses-price img{
+.courses-price img {
     height: 20px;
 }
 
 /* Internships section starts */
 
-.internships{
-width: 100vw;
-margin-top: 100px;
-/* height: 100vh; */
-/* background-color: rgb(105, 88, 88); */
+.internships {
+    width: 100vw;
+    margin-top: 100px;
+    /* height: 100vh; */
+    /* background-color: rgb(105, 88, 88); */
 }
 
-.internships h1{
+.internships h1 {
     text-align: center;
     font-size: 45px;
 }
 
-.internship-upper-cont{
+.internship-upper-cont {
     width: 85%;
     /* height: 500px; */
     display: flex;
@@ -427,7 +564,8 @@ margin-top: 100px;
     margin: 40px auto;
     margin-top: 20px;
 }
-.internship-lower-cont{
+
+.internship-lower-cont {
     margin-top: 50px;
     width: 85%;
     /* height: 500px; */
@@ -439,41 +577,41 @@ margin-top: 100px;
     margin: 10px auto;
 }
 
-.internships-box{
+.internships-box {
     border-radius: 15px;
     height: 510px;
     box-shadow: 1px 1px 20px rgb(192, 191, 191);
     width: 400px;
     margin: 10px;
     -webkit-transition: all .4s;
-    transition:.5s;
+    transition: .5s;
     /* background-color: brown;   */
 }
 
-.internships-box:hover{
-    transform: translateY(-20px); 
-    cursor: pointer;
+.internships-box:hover {
+    transform: translateY(-20px);
     cursor: pointer;
 }
-.intern-box-bg{
+
+.intern-box-bg {
     background-image: url(https://images.pexels.com/photos/270366/pexels-photo-270366.jpeg?cs=srgb&dl=pexels-pixabay-270366.jpg&fm=jpg);
     background-size: cover;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
 }
 
-.intern-overlay{
+.intern-overlay {
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
 }
 
-.intern-box-1 h1{
+.intern-box-1 h1 {
     font-size: 27px;
     width: 150px;
     color: white;
 }
 
-.intern-box-1{
+.intern-box-1 {
     display: flex;
     border-radius: 12px;
     gap: 130px;
@@ -483,13 +621,13 @@ margin-top: 100px;
     align-items: center;
 }
 
-.intern-overlay hr{
+.intern-overlay hr {
     width: 45%;
     color: white;
     margin-left: 20px;
 }
 
-.intern-overlay h3{
+.intern-overlay h3 {
     padding-left: 18px;
     padding-top: 5px;
     padding-bottom: 5px;
@@ -497,12 +635,12 @@ margin-top: 100px;
     color: white;
 }
 
-.intern-box-1 img{
+.intern-box-1 img {
     width: 70px;
     height: 70px;
 }
 
-.intern-box-content{
+.intern-box-content {
     height: 300px;
     width: 100%;
     padding: 20px;
@@ -510,19 +648,19 @@ margin-top: 100px;
 
 }
 
-.intern-box-content img{
+.intern-box-content img {
     height: 35px;
     margin-top: 14px;
 }
 
-.intern-box-content h4{
+.intern-box-content h4 {
     margin-top: 10px;
     font-weight: 500;
     color: rgb(39, 48, 68);
     font-size: 18px;
 }
 
-.intern-box-content span{
+.intern-box-content span {
     background-color: rgb(240, 247, 244);
     color: rgb(39, 48, 68);
     font-size: 16px;
@@ -532,7 +670,7 @@ margin-top: 100px;
     padding: 4px;
 }
 
-.internships-box button{
+.internships-box button {
     background-color: #3275db;
     border-radius: 3px;
     color: white;
@@ -543,7 +681,7 @@ margin-top: 100px;
     margin: 0px auto;
 }
 
-.button{
+.button {
     width: 100%;
     display: flex;
     justify-content: center;
@@ -551,19 +689,19 @@ margin-top: 100px;
     height: 68px;
 }
 
-.internships-box button:hover{
+.internships-box button:hover {
     background-color: rgb(4, 45, 137);
     cursor: pointer;
     transition: 0.2s;
 }
 
-.button button:hover{
+.button button:hover {
     background-color: rgb(4, 45, 137);
     cursor: pointer;
     transition: 0.2s;
 }
 
-.button button{
+.button button {
     background-color: #3275db;
     border-radius: 3px;
     color: white;
@@ -572,4 +710,81 @@ margin-top: 100px;
     padding: 12px 24px;
     font-weight: 500;
     margin: 0px auto;
+}
+
+/* Learning Section starts  */
+
+.learning {
+    margin-top: 70px;
+    width: 100%;
+    /* height: 100vh; */
+    display: flex;
+    align-items: center;
+    /* background-color: red; */
+    justify-content: center;
+}
+
+.learn-left {
+    width: 40vw;
+    /* background-color: aquamarine; */
+}
+
+
+.learn-right {
+    /* background-color: blueviolet; */
+    width: 40vw;
+    height: 60%;
+}
+
+.learn-right h1 {
+    font-size: 50px;
+    font-weight: 700;
+    letter-spacing: normal;
+    color: rgb(39, 48, 68);
+    width: 80%;
+}
+
+.learn-right span {
+    color: #3275db;
+}
+
+.learn-left img {
+    width: 30vw;
+}
+
+.learn-right p {
+    line-height: 28px;
+    margin-top: 20px;
+}
+
+.learn-img {
+    margin-top: 30px;
+}
+
+@media (max-width:600px) {
+
+    .learning {
+        margin-top: 50px;
+    }
+
+
+    .learn-left img {
+        display: none;
+
+    }
+
+    .learn-left {
+        width: 0%;
+    }
+
+    .learn-right {
+        width: 90%;
+        text-align: center;
+    }
+
+    .learn-right h1 {
+        width: 100%;
+        text-align: center;
+    }
+
 }
