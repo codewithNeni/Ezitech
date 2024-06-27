@@ -3,7 +3,6 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Montserrat", sans-serif;
-    list-style-type: none;
 }
 
 body {
@@ -103,6 +102,11 @@ nav {
     display: flex;
     align-items: center;
     border-bottom: 1px solid white;
+}
+
+nav ul{
+    list-style-type: none;
+
 }
 
 .logo img {
@@ -306,8 +310,8 @@ input {
 /* Working Section starts from here */
 
 @media (max-width:700px) {
-    .working img {
-        width: 250px;
+    .working-png img {
+        /* width: 200px; */
     }
 }
 
@@ -328,15 +332,15 @@ input {
 
 .working-png {
     /* background-color: rebeccapurple; */
-    margin: 0px auto;
+    margin: 20px auto;
     display: flex;
-    width: 90%;
+    width: 100%;
     justify-content: space-evenly;
     flex-wrap: wrap;
 }
 
 .working img {
-    width: 300px;
+    width: 250px;
 }
 
 /* Courses Grid Start  */
@@ -347,7 +351,7 @@ input {
         width: 100vw;
     }
 
-    .lower-grid{
+    .lower-grid {
         width: 100vw;
     }
 
@@ -426,8 +430,8 @@ input {
 
 /* Courses Starts from here */
 
-@media (max-width:700px){
-    .courses h1{
+@media (max-width:700px) {
+    .courses h1 {
         font-size: 28px;
         width: 97%;
     }
@@ -543,7 +547,16 @@ input {
 
 
 @media (max-width:700px) {
-
+    .internships-box {
+    border-radius: 15px;
+    height: 440px;
+    box-shadow: 1px 1px 20px rgb(167, 166, 166);
+    width: 380px;
+    margin: 10px;
+    -webkit-transition: none .0s;
+    transition: .0s;
+    /* background-color: brown;   */
+}
 }
 
 .internships {
@@ -584,13 +597,21 @@ input {
 
 .internships-box {
     border-radius: 15px;
-    height: 500px;
+    height: 440px;
     box-shadow: 1px 1px 20px rgb(167, 166, 166);
-    width: 340px;
+    width: 380px;
     margin: 10px;
     -webkit-transition: all .4s;
     transition: .5s;
     /* background-color: brown;   */
+}
+
+.employee {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin: 10px 0px;
+
 }
 
 .internships-box:hover {
@@ -647,7 +668,7 @@ input {
 }
 
 .intern-box-content {
-    height: 300px;
+    height: 230px;
     width: 100%;
     padding: 20px;
     /* background-color: red; */
@@ -671,8 +692,6 @@ input {
     color: rgb(39, 48, 68);
     font-size: 16px;
     font-weight: 400;
-    position: relative;
-    bottom: 25px;
     padding: 4px;
 }
 
@@ -795,7 +814,7 @@ input {
         font-size: 40px;
     }
 
-    .learn-right p{
+    .learn-right p {
         line-height: normal;
     }
 
@@ -803,7 +822,7 @@ input {
 
 /* Investing Section Starts from here */
 
-.investing{
+.investing {
     width: 100%;
     /* height: 700px; */
     background-color: red;
@@ -814,7 +833,7 @@ input {
     align-items: center;
 }
 
-.investing h1{
+.investing h1 {
     text-align: center;
     font-size: 45px;
     width: 45%;
@@ -822,53 +841,214 @@ input {
     color: white;
 }
 
-.investing h1 span{
+.investing h1 span {
     color: #3275db;
 }
 
-.investing-overlay{
-    background-color:rgba(4, 44, 137, 0.952)
+.investing-overlay {
+    background-color: rgba(4, 44, 137, 0.952)
 }
 
-.investing-img{
-    width: 100vw;    
+.investing-img {
+    width: 100vw;
     margin-left: 40px;
 }
 
-.investing-img img{
+.investing-img img {
     /* height: 0vh; */
     width: 94vw;
 }
 
-.invest-btn{
+.invest-btn {
     display: none;
 }
 
-@media (max-width:700px){
+@media (max-width:700px) {
 
-    .investing{
+    .investing {
         height: 300px;
     }
 
-    .investing-img{
+    .investing-img {
         display: none;
     }
 
-    .investing h1{
+    .investing h1 {
         font-size: 30px;
         width: 100%;
     }
 
-    .invest-btn{
+    .invest-btn {
         display: block;
-       display: flex;
-       
+        display: flex;
+
     }
 
 }
 
 /* Footer Section Starts From here */
 
-footer{
+footer {
+    width: 100%;
+    height: 65vh;
+    background-color: rgb(4, 45, 137);
+    padding-top: 20px;
+}
+
+.footer{
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+    justify-content: space-evenly;
+    width: 100vw;
+}
+
+.footer-1 {
+    /* background-color: rgb(54, 56, 56); */
+    width:25%;
+    height: 38vh;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    color: white;
+}
+
+.last{
+    margin: 12px;
+    flex-wrap: wrap;
+}
+
+.footer-2 img{
+    width: 60px;
+    height: 60px;
+}
+
+.footer-p{
+    width: 100%;
+    text-align: center;
+    font-size: 14px;
+}
+
+.footer-img{
+    margin-top: 20px;
+    display: flex;
+    gap: 30px;
+}
+
+.footer-2 {
+    /* background-color: blanchedalmond; */
+    width:25%;
+    color: white;
+    height: 38vh;
+
+}
+
+.footer-3 {
+    color: white;
+    width: 10%;
+    height: 38vh;
+    /* background-color: yellowgreen; */
+}
+
+.footer-3 ul {
+    list-style:disc;
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+    margin-left: 15px;
+    margin-top: 20px;
+    line-height: 5px;
+}
+
+.footer-4 {
+    color: white;
+    width: 25%;
+    height: 38vh;
+    /* background-color: burlywood; */
+}
+
+.foot-loc{
+    color: white;
+    display: flex;
+    margin-top: 20px;
+    gap: 10px;
+}
+
+.foot-loc img{
+    height: 25px;
+width: 25px;
+}
+
+.footer-icons img{
+    height: 30px;
+    width: 30px;
+}
+
+
+@media (max-width:800px) {
+    footer{
+        height: 180vh;
+    }
+    .footer{
+        display: flex;
+        flex-direction: column;
+    }
+    .footer-1{
+        width: 94%;
+        height: 32vh;
+    }
+    .footer-2{
+        width: 94%;
+        height: 32vh;
+    }
+    .footer-3{
+        width: 94%;
+        height: 32vh;
+    }
+
+    .footer-3 ul{
+        line-height: 30px;
+        font-size: 20px;
+    }
+    .footer-4{
+        width: 94%;
+        height: 32vh;
+    }
+
+    .footer-p{
+        margin-top: 20px;
+        width: 70%;
+
+    }
+
+    .need-help{
+        display: none;
+    }
     
 }
+
+.whatsapp{
+    position: fixed;
+    bottom :30px ;
+    left: 30px;
+    display: flex;
+    align-items: center;
+    filter: drop-shadow(0px 0px 3px rgb(212, 210, 210));
+}
+
+.whatsapp img{
+    width: 60px;
+}
+
+.need-help{
+    border-radius: 3px;
+    font-size: 14px;
+    padding:9px;
+    width: 240px;
+    background-color: white;
+    position: fixed;
+    bottom :14px ;
+    left: 75px;
+}
+
