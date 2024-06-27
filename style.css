@@ -541,9 +541,15 @@ input {
 
 /* Internships section starts */
 
+
+@media (max-width:700px) {
+
+}
+
 .internships {
     width: 100vw;
-    margin-top: 100px;
+    margin-top: 0px;
+    margin: 60px auto;
     /* height: 100vh; */
     /* background-color: rgb(105, 88, 88); */
 }
@@ -554,34 +560,33 @@ input {
 }
 
 .internship-upper-cont {
-    width: 85%;
+    width: 90%;
     /* height: 500px; */
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: center;
     /* background-color: rebeccapurple; */
     flex-wrap: wrap;
-    margin: 40px auto;
-    margin-top: 20px;
+    margin: 0px auto;
+    margin-top: 50px;
 }
 
 .internship-lower-cont {
-    margin-top: 50px;
-    width: 85%;
+    width: 90%;
     /* height: 500px; */
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: center;
     /* background-color: rgb(173, 136, 136); */
     flex-wrap: wrap;
-    margin: 10px auto;
+    margin: 0px auto;
 }
 
 .internships-box {
     border-radius: 15px;
-    height: 510px;
-    box-shadow: 1px 1px 20px rgb(192, 191, 191);
-    width: 400px;
+    height: 500px;
+    box-shadow: 1px 1px 20px rgb(167, 166, 166);
+    width: 340px;
     margin: 10px;
     -webkit-transition: all .4s;
     transition: .5s;
@@ -606,16 +611,17 @@ input {
 }
 
 .intern-box-1 h1 {
-    font-size: 27px;
-    width: 150px;
+    font-size: 24px;
+    width: 170px;
     color: white;
+    text-align: center;
 }
 
 .intern-box-1 {
     display: flex;
     border-radius: 12px;
-    gap: 130px;
-    padding: 18px;
+    gap: 90px;
+    padding: 14px 0px;
     width: 100%;
     /* background-color: aqua; */
     align-items: center;
@@ -733,7 +739,7 @@ input {
 .learn-right {
     /* background-color: blueviolet; */
     width: 40vw;
-    height: 60%;
+    height: 60vh;
 }
 
 .learn-right h1 {
@@ -761,10 +767,11 @@ input {
     margin-top: 30px;
 }
 
-@media (max-width:600px) {
+@media (max-width:700px) {
 
     .learning {
         margin-top: 50px;
+        width: 100%;
     }
 
 
@@ -778,13 +785,90 @@ input {
     }
 
     .learn-right {
-        width: 90%;
+        width: 97%;
         text-align: center;
     }
 
     .learn-right h1 {
         width: 100%;
         text-align: center;
+        font-size: 40px;
     }
 
+    .learn-right p{
+        line-height: normal;
+    }
+
+}
+
+/* Investing Section Starts from here */
+
+.investing{
+    width: 100%;
+    /* height: 700px; */
+    background-color: red;
+    background-image: url(https://images.pexels.com/photos/270366/pexels-photo-270366.jpeg?cs=srgb&dl=pexels-pixabay-270366.jpg&fm=jpg);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.investing h1{
+    text-align: center;
+    font-size: 45px;
+    width: 45%;
+    margin: 40px auto;
+    color: white;
+}
+
+.investing h1 span{
+    color: #3275db;
+}
+
+.investing-overlay{
+    background-color:rgba(4, 44, 137, 0.952)
+}
+
+.investing-img{
+    width: 100vw;    
+    margin-left: 40px;
+}
+
+.investing-img img{
+    /* height: 0vh; */
+    width: 94vw;
+}
+
+.invest-btn{
+    display: none;
+}
+
+@media (max-width:700px){
+
+    .investing{
+        height: 300px;
+    }
+
+    .investing-img{
+        display: none;
+    }
+
+    .investing h1{
+        font-size: 30px;
+        width: 100%;
+    }
+
+    .invest-btn{
+        display: block;
+       display: flex;
+       
+    }
+
+}
+
+/* Footer Section Starts From here */
+
+footer{
+    
 }
